@@ -1,0 +1,196 @@
+{
+    "name": "growborg",
+    "templateLanguage": "en",
+    "translations": [
+        {
+            "language": "en",
+            "values": [
+                {
+                    "key": "helloMessageNoDescription",
+                    "value": "Welcome to the GrowBorg app"
+                },
+                {
+                    "key": "helloMessage",
+                    "value": "Welcome to the GrowBorg app",
+                    "description": "The conventional newborn programmer greeting"
+                },
+                {
+                    "key": "helloWorld",
+                    "value": "Hello! '{Isn''t}' this a wonderful day?",
+                    "description": "Message with escaping charaters"
+                },
+                {
+                    "key": "hello",
+                    "value": "Hello {userName}",
+                    "description": "A message with a single parameter",
+                    "placeholders": {
+                        "userName": {
+                            "mode": "placeholder",
+                            "type": "String",
+                            "example": "Bob"
+                        }
+                    }
+                },
+                {
+                    "key": "numberOfDevices",
+                    "value": "You have {numberOfDevices} {device} on connected with your account",
+                    "description": "The conventional newborn programmer greeting",
+                    "placeholders": {
+                        "numberOfDevices": {
+                            "mode": "placeholder",
+                            "type": "int"
+                        },
+                        "device": {
+                            "mode": "plural",
+                            "type": "int",
+                            "values": {
+                                "1": "device",
+                                "other": "devices"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "descriptionCheckEmailScreen",
+                    "value": "We have sent an email to {email}. Please check your email for the verification link.",
+                    "placeholders": {
+                        "email": {
+                            "mode": "placeholder",
+                            "type": "String"
+                        }
+                    }
+                },
+                {
+                    "key": "pronoun",
+                    "value": "{gender}",
+                    "description": "A gendered message",
+                    "placeholders": {
+                        "gender": {
+                            "mode": "select",
+                            "type": "String",
+                            "values": {
+                                "male": "he",
+                                "female": "she",
+                                "other": "they"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "numberOfDataPoints",
+                    "value": "Number of data points: {value}",
+                    "description": "A message with a formatted int parameter",
+                    "placeholders": {
+                        "value": {
+                            "mode": "placeholder",
+                            "type": "int",
+                            "format": "compactCurrency",
+                            "optionalParameters": {
+                                "decimalDigits": 2
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "helloWorldOn",
+                    "value": "Hello World on {date}",
+                    "description": "A message with a date parameter",
+                    "placeholders": {
+                        "date": {
+                            "type": "DateTime",
+                            "format": "yMd"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "language": "sr",
+            "values": [
+                {
+                    "key": "helloMessage",
+                    "value": "Dobrodosli u GrowBorg aplikaciju",
+                    "description": "The conventional newborn programmer greeting"
+                },
+                {
+                    "key": "helloWorld",
+                    "value": "Dobar dan! Nije l'' danas lep dan?",
+                    "description": "Message with escaping charaters"
+                },
+                {
+                    "key": "hello",
+                    "value": "Pozdrav {userName}",
+                    "description": "A message with a single parameter",
+                    "placeholders": {
+                        "userName": {
+                            "mode": "placeholder",
+                            "type": "String",
+                            "example": "Bob"
+                        }
+                    }
+                },
+                {
+                    "key": "numberOfDevices",
+                    "value": "Imate {numberOfDevices} {device} povezanih na vas profil",
+                    "description": "The conventional newborn programmer greeting",
+                    "placeholders": {
+                        "numberOfDevices": {
+                            "mode": "placeholder",
+                            "type": "int"
+                        },
+                        "device": {
+                            "mode": "plural",
+                            "type": "int",
+                            "values": {
+                                "1": "device",
+                                "other": "devices"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "pronoun",
+                    "value": "{gender}",
+                    "description": "A gendered message",
+                    "placeholders": {
+                        "gender": {
+                            "mode": "select",
+                            "type": "String",
+                            "values": {
+                                "male": "he",
+                                "female": "she",
+                                "other": "they"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "numberOfDataPoints",
+                    "value": "Broj data poena: {value}",
+                    "description": "A message with a formatted int parameter",
+                    "placeholders": {
+                        "value": {
+                            "mode": "placeholder",
+                            "type": "int",
+                            "format": "compactCurrency",
+                            "optionalParameters": {
+                                "decimalDigits": 2
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "helloWorldOn",
+                    "value": "Dobar dan svete datum: {date}",
+                    "description": "A message with a date parameter",
+                    "placeholders": {
+                        "date": {
+                            "type": "DateTime",
+                            "format": "yMd"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
